@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#89C249">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <title>MasterTao</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <a href="markap.html" class="delete" style="position: fixed;bottom: 16px;left: 28px;">markap</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="img-logo" href="index.html"><img src="assets/img/logo.svg"></a>
+                <button class="hamburger hamburger--squeeze js-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Цены и сроки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О Компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Оформить груз</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button type="button" class="btn btn-primary">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="first-screen">
+        <div class="container-xxl">
+            <div class="test" style="position: relative;">
+                <div class="slider-box">
+                    <div class="slider" style="background-image: url(assets/img/first-screen_slider1.png);">
+                        <div class="container">
+                            <h2 class="title-slider">Прямое КАРГО из Китая</h2>
+                            <p class="subtitle">Доставляем любые грузы из Китая по честной цене</p>
+                            <button type="button" class="btn btn-primary btn-lg">Рассчитать стоимость<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                        </div>
+                    </div>
+                    <div class="slider" style="background-image: url(assets/img/fisrt-screen_slider2.png);">
+                        <div class="container">
+                            <h2 class="title-slider">Гарантируем сроки!</h2>
+                            <p class="subtitle subtitle-1">Если мы не уложимся в обозначенные сроки, доставка груза со скидкой до 90%</p>
+                            <button type="button" class="btn btn-primary btn-lg">Рассчитать стоимость<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                        </div>
+                    </div>
+                    <div class="slider" style="background-image: url(assets/img/first-screen_slider3.png);">
+                        <div class="container">
+                            <h2 class="title-slider">Выкуп товара с ТаоБао, 1688</h2>
+                            <p class="subtitle">Выкуп и доставка товаров с китайских торговых площадок.</p>
+                            <button type="button" class="btn btn-primary btn-lg">Рассчитать стоимость<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                        </div>
+                    </div>
+                    <div class="slider" style="background-image: url(assets/img/first-screen_slider4.png);">
+                        <div class="container">
+                            <h2 class="title-slider">Экспресс авто доставка</h2>
+                            <p class="subtitle">Доставка автотранспортом из Китая в Украину от 15 дней, от $0,5/кг</p>
+                            <button type="button" class="btn btn-primary btn-lg">Рассчитать стоимость<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="first-screen-nav">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="calculation">
+        <div class="container">
+            <div class="col title-calculation"><h2>Получить рассчет стоимости доставки вашего груза</h2>
+            </div>
+            <div class="row" style="position: relative;">
+                <div class="col-lg-6 box-left_form">
+                    <div class="container container-left_form">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-parent">
+                                        <label for="form-1_calculation" class="title-input">Категория товара:</label>
+                                        <input type="text" id="form-1_calculation" class="custom-input" placeholder="Категория товара">
+                                    </div>
+                                    <div class="form-parent">
+                                        <label for="form-3_calculation" class="title-input">Вес груза (кг):</label>
+                                        <input type="number" id="form-3_calculation" class="custom-input" placeholder="Введите вес">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-parent">
+                                        <label for="form-2_calculation" class="title-input">Стоимость груза:</label>
+                                        <input type="number" id="form-2_calculation" class="custom-input" placeholder="Введите стоимость">
+                                    </div>
+                                    <div class="form-parent">
+                                        <label for="form-4_calculation" class="title-input">Объем груза (м3):</label>
+                                        <input type="number" id="form-4_calculation" class="custom-input" placeholder="Введите объем">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="container-checkbox">
+                                        <div class="form-parent">
+                                            <input type="checkbox" id="checkbox-1" class="custom-input">
+                                            <label for="checkbox-1">
+                                                <div class="title-input">Страховка</div>
+                                            </label>
+                                        </div>
+                                        <div class="form-parent">
+                                            <input type="checkbox" id="checkbox-2" class="custom-input">
+                                            <label for="checkbox-2">
+                                                <div class="title-input">Таможенное оформление</div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-parent">
+                                        <label for="form-5_calculation" class="title-input">Код ТН ВЭД:</label>
+                                        <input type="text" id="form-5_calculation" class="custom-input" placeholder="Введите код">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="file-name" id="file-name">фотография.jpeg</div>
+                                    <label for="file-1" class="download-file">Загрузить фото товара</label>
+                                    <input type="file" id="file-1">
+                                </div>
+                                <div class="col-lg-6">
+                                    <a href="index.html"><button type="button" class="btn btn-primary btn-lg">Следующий шаг
+                                        <img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon">
+                                    </button></a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="container-img_calculation"><img src="assets/img/man.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="advantages">
+        <div class="container-xxl advantages-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col template-title-type2">
+                        <h2 class="advantages-title title-default">Почему стоит выбрать именно нас?</h2>
+                    </div>
+                </div>
+                <div class="slider-box_advantages row" id="slider-box_min1">
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-1.svg"></div>
+                            <div class="advantages-subtitle">Таможенное оформление груза</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-2.svg"></div>
+                            <div class="advantages-subtitle">Страховка груза</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-3.svg"></div>
+                            <div class="advantages-subtitle">Проверка товара на брак</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-4.svg"></div>
+                            <div class="advantages-subtitle">Доставка в любой город Украины</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-5.svg"></div>
+                            <div class="advantages-subtitle">Консолидация на складе</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-6.svg"></div>
+                            <div class="advantages-subtitle">Ответственное хранение груза</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-7.svg"></div>
+                            <div class="advantages-subtitle">Помощь в оплате товара</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="advantages-parent">
+                            <div class="icon-img"><img src="assets/img/file-8.svg"></div>
+                            <div class="advantages-subtitle">Упаковка, переупаковка</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="delivery">
+        <div class="container-xxl">
+            <div class="container">
+                <div class="template-title title-default">Варианты доставки грузов из Китая</div>
+                <div class="container-carousel">
+                    <div class="slider-cards">
+                        <div class="card">
+                            <div class="card-img" style="background-image: url(assets/img/delivery-img1.png);">
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Авто - обычная</h4>
+                                <div class="card-description">
+                                    <div class="row row-card">
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/calendar.svg" alt="calendar">
+                                            <p>9-15 дней</p>
+                                        </div>
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/box-dc-card.svg" alt="card">
+                                            <p>от 5 кг</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="price-card"><span>от</span>2,5<span>$/кг</span></h5>
+                                    <div class="card-button col">
+                                        <button type="button" class="btn btn-primary">Оставить заявку</button>
+                                        <button type="button" class="btn btn-secondary">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image: url(assets/img/delivery-img2.png);">
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Авто - ускоренная</h4>
+                                <div class="card-description">
+                                    <div class="row row-card">
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/calendar.svg" alt="calendar">
+                                            <p>9-15 дней</p>
+                                        </div>
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/box-dc-card.svg" alt="card">
+                                            <p>от 5 кг</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="price-card"><span>от</span>2,5<span>$/кг</span></h5>
+                                </div>
+                                <div class="card-button col">
+                                    <button type="button" class="btn btn-primary">Оставить заявку</button>
+                                    <button type="button" class="btn btn-secondary">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image: url(assets/img/delivery-img3.png)">
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Авиа</h4>
+                                <div class="card-description">
+                                    <div class="row row-card">
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/calendar.svg" alt="calendar">
+                                            <p>9-15 дней</p>
+                                        </div>
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/box-dc-card.svg" alt="card">
+                                            <p>от 5 кг</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="price-card"><span>от</span>2,5<span>$/кг</span></h5>
+                                </div>
+                                <div class="card-button col">
+                                    <button type="button" class="btn btn-primary">Оставить заявку</button>
+                                    <button type="button" class="btn btn-secondary">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image: url(assets/img/delivery-img4.png)">
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Ж/д</h4>
+                                <div class="card-description">
+                                    <div class="row row-card">
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/calendar.svg" alt="calendar">
+                                            <p>9-15 дней</p>
+                                        </div>
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/box-dc-card.svg" alt="card">
+                                            <p>от 5 кг</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="price-card"><span>от</span>2,5<span>$/кг</span></h5>
+                                </div>
+                                <div class="card-button col">
+                                    <button type="button" class="btn btn-primary">Оставить заявку</button>
+                                    <button type="button" class="btn btn-secondary">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" style="background-image: url(assets/img/delivery-img5.png)">
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Море</h4>
+                                <div class="card-description">
+                                    <div class="row row-card">
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/calendar.svg" alt="calendar">
+                                            <p>9-15 дней</p>
+                                        </div>
+                                        <div class="child-card col-6">
+                                            <img src="assets/img/box-dc-card.svg" alt="card">
+                                            <p>от 5 кг</p>
+                                        </div>
+                                    </div>
+                                    <h5 class="price-card"><span>от</span>2,5<span>$/кг</span></h5>
+                                </div>
+                                <div class="card-button col">
+                                    <button type="button" class="btn btn-primary">Оставить заявку</button>
+                                    <button type="button" class="btn btn-secondary">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arows-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Footer
+    </footer>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
