@@ -545,6 +545,28 @@ section:nth-child(odd) .template-title:after {
   text-transform: uppercase;
 }
 
+.arows-card {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.arows-card .slick-prev {
+  transform: translate(-113px, -50%) rotate(180deg);
+}
+.arows-card .slick-next {
+  transform: translate(113px, -50%);
+}
+
+.container-carousel {
+  position: relative;
+}
+
+.card-title-default {
+  margin-bottom: 13px;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -823,6 +845,8 @@ body {
   font-size: 15px;
   line-height: 126%;
   width: 100%;
+  text-decoration: none;
+  color: #FFF;
 }
 .calculation .container .container-left_form .btn {
   margin-top: 25px;
@@ -1011,43 +1035,102 @@ body {
 .delivery .container-xxl .slick-list {
   margin: 0 -15px;
 }
-.delivery .container-xxl .container-carousel {
-  position: relative;
-}
-.delivery .arows-card {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-}
-.delivery .arows-card .slick-prev {
-  transform: translate(-113px, -50%) rotate(180deg);
-}
-.delivery .arows-card .slick-next {
-  transform: translate(113px, -50%);
-}
 .delivery .row {
   margin: 0;
+}
+
+.services {
+  margin-bottom: 98px;
+}
+.services .template-title-type2 {
+  margin-bottom: 77px;
+}
+.services .services-container {
+  position: relative;
+  border-radius: 20px;
+  padding-bottom: 100px;
+}
+.services .services-container .services-title {
+  padding-top: 90px;
+}
+.services .services-container .template-slider .card {
+  max-width: 360px;
+  height: 482px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 15px;
+  background-color: #363A4D;
+}
+.services .services-container .template-slider .card .card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.services .services-container .template-slider .card .card-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+  border-radius: 20px;
+}
+.services .services-container .template-slider .card .card-content {
+  height: 100%;
+  z-index: 2;
+  position: relative;
+  padding: 0 23px 33px 30px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.services .services-container .template-slider .card .card-content .card-description p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 124.5%;
+}
+.services .services-container .template-slider .card .card-content .card-description .btn {
+  padding: 13px 0;
+  justify-content: center;
+  max-width: 153px;
+  width: 100%;
+}
+.services .services-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  right: 50px;
+  background-color: #363A4D;
+  border-radius: 20px;
+  z-index: -1;
+}
+.services .slick-list {
+  margin: 0 -15px;
 }
 
 .about-company {
   margin-bottom: 50px;
   padding-top: 57px;
 }
-.about-company .container .col-6 .about-company-title {
+.about-company .container .col-lg-6 .about-company-title {
   max-width: 250px;
   font-size: 36px;
   line-height: 124.5%;
   text-align: start;
   text-transform: uppercase;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
-.about-company .container .col-6 .about-company-title::after {
+.about-company .container .col-lg-6 .about-company-title::after {
   left: 0;
   transform: translate(0, 0);
 }
-.about-company .container .col-6 .about-company-descrition {
+.about-company .container .col-lg-6 .about-company-descrition {
   font-size: 18px;
   font-weight: 300;
   line-height: 170%;
@@ -1062,12 +1145,8 @@ body {
   max-height: 550px;
 }
 .about-company .container .about-company_img-container img {
-  max-width: 100%;
-}
-
-.services {
-  margin-bottom: 98px;
-  height: 200px;
+  transform: translate(-10px, 0px);
+  max-width: 488px;
 }
 
 footer {
@@ -1116,14 +1195,14 @@ footer {
     padding-left: 46px;
     background-position: center;
   }
-  .delivery .container-carousel .slick-list {
+  .delivery .container-carousel .slick-list, .services .container-carousel .slick-list {
     max-width: 720px;
     margin: 0 auto;
   }
-  .delivery .arows-card .slick-prev {
+  .delivery .arows-card .slick-prev, .services .arows-card .slick-prev {
     transform: translate(0, -50%) rotate(180deg);
   }
-  .delivery .arows-card .slick-next {
+  .delivery .arows-card .slick-next, .services .arows-card .slick-next {
     transform: translate(0, -50%);
   }
 }
@@ -1309,7 +1388,7 @@ footer {
     position: absolute;
     right: 0;
   }
-  .advantages .advantages-container .decoration-line .advantages-title {
+  .advantages .advantages-container .advantages-title {
     font-size: 24px;
     max-width: 310px;
     margin: 55px auto 17px auto;
@@ -1326,9 +1405,57 @@ footer {
     right: 0;
     border-radius: 0;
   }
-  .delivery .container-carousel .slick-list {
+  .delivery .container-carousel .slick-list,
+  .services .container-carousel .slick-list {
     max-width: 360px;
     margin: 0 auto 32px;
+  }
+  .delivery .template-title,
+  .services .template-title {
+    font-size: 24px;
+  }
+  .delivery .services-title,
+  .services .services-title {
+    font-size: 24px;
+  }
+  .services .services-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #363A4D;
+    border-radius: 0;
+    z-index: -1;
+  }
+  .about-company .container .col-lg-6 .about-company-title {
+    text-align: center;
+    margin: 0 auto 45px;
+    font-size: 24px;
+  }
+  .about-company .container .col-lg-6 .about-company-title::after {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .about-company .container .col-lg-6 .about-company-descrition {
+    margin: 0 auto 23px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .about-company .container .col-lg-6 .about-company-descrition:last-child {
+    margin-bottom: 40px;
+  }
+  .about-company .container .col-lg-6 .about-company_img-container {
+    transform: translate(0, 0);
+    max-width: 277px;
+    height: 277px;
+    margin: 0 auto;
+  }
+  .about-company .container .col-lg-6 .about-company_img-container img {
+    transform: translate(-30px, 0);
+    max-width: 242px;
+    height: 284px;
   }
 }
 /*# sourceMappingURL=style.css.map */
