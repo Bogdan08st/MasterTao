@@ -60,6 +60,8 @@ document.getElementById('file-1').onchange = function() {
     //document.getElementById('file-name').innerHTML = this.value;
 };
 
+
+
 // const checkButtons = document.querySelectorAll('.check-button');
 // console.log(checkButtons);
 
@@ -74,20 +76,21 @@ document.getElementById('file-1').onchange = function() {
 
 
 
-$('.slider-cards').slick({
+$('.template-slider').slick({
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    appendArrows: '.arows-card',
+    appendArrows: $('.arows-card'),
     responsive: [
         {
           breakpoint: 1300,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
+            arrows: true,
           }
         },
       {
@@ -100,4 +103,4 @@ $('.slider-cards').slick({
         }
       },
     ]
-  });
+});
