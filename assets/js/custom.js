@@ -83,7 +83,6 @@ $('.template-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    appendArrows: $('.arows-card'),
     responsive: [
         {
           breakpoint: 1300,
