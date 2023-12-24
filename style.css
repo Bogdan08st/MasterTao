@@ -434,7 +434,7 @@ section:nth-child(odd) .template-title:after {
 .template-title {
   text-align: center;
   position: relative;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   margin-bottom: 50px;
   /*type 3*/
 }
@@ -1067,6 +1067,7 @@ body {
 }
 .services .services-container .services-title {
   padding-top: 90px;
+  margin-bottom: 19px;
 }
 .services .services-container .template-slider .card {
   max-width: 360px;
@@ -1130,8 +1131,8 @@ body {
 }
 
 .about-company {
-  margin-bottom: 26px;
-  padding-top: 57px;
+  margin-bottom: 50px;
+  padding-top: 56px;
 }
 .about-company .container .col-lg-6 .about-company-title {
   max-width: 250px;
@@ -1164,11 +1165,14 @@ body {
   max-width: 488px;
 }
 
+.faq {
+  margin-bottom: 100px;
+}
 .faq .faq-title {
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 .faq .faq-title .title-default {
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 .faq .faq_accordion-container {
   max-width: 739px;
@@ -1179,8 +1183,7 @@ body {
   font-size: 17px;
   font-weight: 300;
   line-height: 144.5%;
-  padding: 21px 21px 21px 34px;
-  max-width: 600px;
+  padding: 0px 95px 21px 34px;
 }
 .faq .faq_accordion-container .accordion-flush {
   display: flex;
@@ -1215,7 +1218,8 @@ body {
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
   background-color: white;
-  color: #000;
+  color: black;
+  box-shadow: none;
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button::after {
   background-image: url(assets/img/acordition.svg);
@@ -1258,6 +1262,12 @@ body {
   border-radius: 20px;
   box-shadow: 5px 15px 40px 0px rgba(30, 35, 66, 0.15);
 }
+.faq .faq-card .questions-card p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 126%;
+  margin-bottom: 22px;
+}
 .faq .faq-card .questions-card .input-parent {
   gap: 14px;
   display: flex;
@@ -1265,22 +1275,64 @@ body {
 }
 .faq .faq-card .questions-card .input-parent .input-child {
   max-width: 310px;
-  height: 56px;
   margin: 0;
   padding: 0;
 }
-.faq .faq-card .questions-card .input-parent .input-child input {
+.faq .faq-card .questions-card .input-parent .input-child input, .faq .faq-card .questions-card .input-parent .input-child textarea {
   border-radius: 10px;
   border: none;
+  height: 56px;
+  padding: 0 20px;
 }
-.faq .accordion-button:not(.collapsed) {
-  background-color: white;
-  color: black;
-  background-color: transparent;
-  box-shadow: none;
+.faq .faq-card .questions-card .input-parent .input-child input::placeholder, .faq .faq-card .questions-card .input-parent .input-child textarea::placeholder {
+  color: #CBCBCB;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 126%;
+  padding-top: 5px;
+}
+.faq .faq-card .questions-card .input-parent .input-child input:hover, .faq .faq-card .questions-card .input-parent .input-child textarea:hover {
+  box-shadow: 0px 0px 4px 1px #89C249;
+}
+.faq .faq-card .questions-card .input-parent .input-child input:focus, .faq .faq-card .questions-card .input-parent .input-child textarea:focus {
+  box-shadow: 0px 0px 4px 1px #89C249;
+}
+.faq .faq-card .questions-card .input-parent .input-child input:focus-visible, .faq .faq-card .questions-card .input-parent .input-child textarea:focus-visible {
+  outline: none;
+}
+.faq .faq-card .questions-card .input-parent .input-child #yourquestion {
+  height: 70px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  resize: none;
+}
+.faq .faq-card .questions-card .input-parent a {
+  margin-top: 12px;
+  border-radius: 90px;
+}
+.faq .faq-card .questions-card .input-parent a .btn {
+  height: 68px;
+  padding: 21px 0 20px 32px;
+  width: 100%;
+}
+.faq .faq-card .questions-card .input-parent a .btn p {
+  margin: 0;
+  padding: 0;
+  max-width: 150px;
+  letter-spacing: normal;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 146%;
+}
+.faq .faq-card .questions-card .input-parent a .btn img {
+  margin: 0 18px 0 auto;
 }
 .faq .show {
   background-color: white;
+}
+.faq a {
+  padding: 0;
 }
 
 footer {
@@ -1347,8 +1399,25 @@ footer {
   .delivery .slick-next, .services .slick-next {
     transform: translate(-40px, -50%);
   }
+  .faq .faq-card .questions-card .input-parent .input-child {
+    max-width: calc(50% - 14px);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .faq .faq-card {
+    height: 605px;
+  }
+  .faq .faq-card .questions-card .input-parent .input-child {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 991px) {
+  .template-title {
+    padding-bottom: 22px;
+  }
+  .template-title-type2 .title-default {
+    margin-bottom: 22px;
+  }
   header .navbar {
     margin-top: 17px;
     margin-bottom: 15px;
@@ -1571,6 +1640,9 @@ footer {
     border-radius: 0;
     z-index: -1;
   }
+  .about-company {
+    margin-bottom: 34px;
+  }
   .about-company .container .col-lg-6 .about-company-title {
     text-align: center;
     margin: 0 auto 45px;
@@ -1598,6 +1670,37 @@ footer {
     transform: translate(-30px, 0);
     max-width: 242px;
     height: 284px;
+  }
+  .faq .faq-title h3 {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+  .faq .faq_accordion-container {
+    margin: 0 auto 28px;
+  }
+  .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button {
+    font-size: 16px;
+    padding: 18px 17px 17px 22px;
+  }
+  .faq .faq_accordion-container .accordion-body {
+    font-size: 14px;
+    padding: 0 95px 21px 22px;
+  }
+  .faq .faq-card {
+    height: 553px;
+  }
+  .faq .faq-card .questions-card .title-card {
+    text-align: center;
+  }
+  .faq .faq-card .questions-card .descrition-card {
+    font-weight: 400;
+    text-align: center;
+  }
+  .faq .faq-card .questions-card .input-parent .input-child {
+    max-width: 100%;
+  }
+  .faq .faq-card::before {
+    left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
