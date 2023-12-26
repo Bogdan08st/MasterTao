@@ -1131,7 +1131,7 @@ body {
 }
 
 .about-company {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding-top: 56px;
 }
 .about-company .container .col-lg-6 .about-company-title {
@@ -1166,7 +1166,7 @@ body {
 }
 
 .faq {
-  margin-bottom: 100px;
+  margin-bottom: 97px;
 }
 .faq .faq-title {
   margin-bottom: 69px;
@@ -1199,13 +1199,16 @@ body {
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button {
   border-radius: 10px 10px 0px 0px;
+  padding: 18px 17px 17px 34px;
+  background-color: transparent;
+}
+.faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button p {
   font-size: 18px;
   font-weight: 700;
   line-height: 124.5%;
-  background-color: transparent;
   color: #FFF;
-  padding: 18px 17px 17px 34px;
   transition: 0.3s;
+  margin: 0;
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: 10px;
@@ -1218,8 +1221,10 @@ body {
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
   background-color: white;
-  color: black;
   box-shadow: none;
+}
+.faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) p {
+  color: black;
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button::after {
   background-image: url(assets/img/acordition.svg);
@@ -1335,6 +1340,81 @@ body {
   padding: 0;
 }
 
+.cooperation .cooperation-container {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 90px;
+}
+.cooperation .cooperation-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50px;
+  right: 50px;
+  background-color: #363A4D;
+  border-radius: 20px;
+  z-index: -1;
+}
+.cooperation .cooperation-container .title-default {
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin-bottom: 87px;
+}
+.cooperation .cooperation-container .title-default h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.cooperation .cooperation-container .title-default p {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 124.5%;
+}
+.cooperation .cooperation-container .container-img {
+  max-width: 555px;
+  height: 406px;
+  border-radius: 20px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cooperation .cooperation-container .row .cooperation-content {
+  padding-left: 18px;
+  padding-top: 24px;
+  gap: 29px;
+  display: flex;
+  max-width: 550px;
+  width: 100%;
+}
+.cooperation .cooperation-container .cooperation-content p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 156.5%;
+  margin: 0;
+}
+.cooperation .cooperation-container .flex-row-reverse {
+  margin-bottom: 50px;
+}
+.cooperation .cooperation-container .flex-row-reverse .cooperation-content {
+  padding: 0;
+  gap: 27px;
+  display: flex;
+  max-width: 545px;
+  width: 100%;
+}
+.cooperation .cooperation-container .cooperation-btn_container {
+  margin-top: 42px;
+  margin-left: 18px;
+}
+.cooperation .cooperation-container .cooperation-btn_container .btn {
+  letter-spacing: normal;
+  padding-left: 32px;
+  padding-top: 20px;
+}
+
 footer {
   height: 100px;
   margin-top: auto;
@@ -1399,8 +1479,27 @@ footer {
   .delivery .slick-next, .services .slick-next {
     transform: translate(-40px, -50%);
   }
+  .faq .faq_accordion-container {
+    margin: 0 auto 28px;
+  }
   .faq .faq-card .questions-card .input-parent .input-child {
     max-width: calc(50% - 14px);
+  }
+  .cooperation .cooperation-container::before {
+    left: 10px;
+    right: 10px;
+    border-radius: 20px;
+  }
+  .cooperation .cooperation-container .cooperation-btn_container {
+    margin-top: 42px;
+    margin-left: 0;
+  }
+  .cooperation .cooperation-container .container-img {
+    height: 400px;
+  }
+  .cooperation .cooperation-container .container {
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1641,11 +1740,11 @@ footer {
     z-index: -1;
   }
   .about-company {
-    margin-bottom: 34px;
+    margin-bottom: 60px;
   }
   .about-company .container .col-lg-6 .about-company-title {
     text-align: center;
-    margin: 0 auto 45px;
+    margin: 0 auto 29px;
     font-size: 24px;
   }
   .about-company .container .col-lg-6 .about-company-title::after {
@@ -1653,23 +1752,33 @@ footer {
     transform: translate(-50%, 0);
   }
   .about-company .container .col-lg-6 .about-company-descrition {
-    margin: 0 auto 23px;
+    margin: 0 auto 22px;
+    letter-spacing: normal;
     font-size: 16px;
     font-weight: 300;
+    padding: 0 12px;
+    text-align: justify;
+    line-height: 149.5%;
   }
   .about-company .container .col-lg-6 .about-company-descrition:last-child {
     margin-bottom: 40px;
   }
   .about-company .container .col-lg-6 .about-company_img-container {
-    transform: translate(0, 0);
+    transform: translate(5px, 0);
     max-width: 277px;
     height: 277px;
     margin: 0 auto;
   }
   .about-company .container .col-lg-6 .about-company_img-container img {
     transform: translate(-30px, 0);
-    max-width: 242px;
-    height: 284px;
+    max-width: 270px;
+    height: 293px;
+  }
+  .faq {
+    margin-bottom: 60px;
+  }
+  .faq .faq-title {
+    margin-bottom: 54px;
   }
   .faq .faq-title h3 {
     font-size: 24px;
@@ -1677,17 +1786,36 @@ footer {
   }
   .faq .faq_accordion-container {
     margin: 0 auto 28px;
+    padding: 0 23px;
+  }
+  .faq .faq_accordion-container .accordion-flush {
+    gap: 14px;
+  }
+  .faq .faq_accordion-container .accordion-flush .accordion-item {
+    margin: 0;
+  }
+  .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-header {
+    height: 64px;
   }
   .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button {
+    padding: 16px 20px 15px 22px;
+    height: 100%;
+  }
+  .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button p {
     font-size: 16px;
-    padding: 18px 17px 17px 22px;
+    max-width: 235px;
+  }
+  .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) p {
+    padding-top: 10px;
   }
   .faq .faq_accordion-container .accordion-body {
     font-size: 14px;
-    padding: 0 95px 21px 22px;
+    padding: 0px 15px 9px 20px;
   }
   .faq .faq-card {
     height: 553px;
+    padding-left: 33px;
+    padding-right: 33px;
   }
   .faq .faq-card .questions-card .title-card {
     text-align: center;
@@ -1700,7 +1828,76 @@ footer {
     max-width: 100%;
   }
   .faq .faq-card::before {
-    left: 0;
+    left: 10px;
+    right: 10px;
+  }
+  .cooperation .cooperation-container {
+    padding-bottom: 60px;
+    padding-top: 54px;
+  }
+  .cooperation .cooperation-container .container {
+    padding-right: 15px;
+    padding-left: 27px;
+  }
+  .cooperation .cooperation-container::before {
+    left: -15px;
+    right: -15px;
+    border-radius: 0px;
+  }
+  .cooperation .cooperation-container .title-default {
+    margin-bottom: 43px;
+  }
+  .cooperation .cooperation-container .title-default h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 124.5%;
+    margin-bottom: 7px;
+  }
+  .cooperation .cooperation-container .title-default p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 124.5%;
+  }
+  .cooperation .cooperation-container .row .cooperation-content, .cooperation .cooperation-container .flex-row-reverse .cooperation-content {
+    padding: 0;
+    padding-left: 12px;
+    gap: 23px;
+    margin: 0 auto;
+    transform: translate(-12px, 0px);
+  }
+  .cooperation .cooperation-container .row .cooperation-content p, .cooperation .cooperation-container .flex-row-reverse .cooperation-content p {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 149.5%;
+    padding: 0;
+  }
+  .cooperation .cooperation-container .flex-row-reverse {
+    margin-bottom: 42px;
+  }
+  .cooperation .cooperation-container .cooperation-btn_container {
+    margin-top: 27px;
+    max-width: 332px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cooperation .cooperation-container .cooperation-btn_container .btn {
+    padding-right: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .cooperation .cooperation-container .cooperation-btn_container .btn img {
+    margin: 0 20px 0 0px;
+  }
+  .cooperation .cooperation-container .container-img {
+    max-width: 545px;
+    height: 220px;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cooperation .cooperation-container .container-img {
+    margin-right: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
