@@ -41,29 +41,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   font-style: normal;
   font-display: swap;
 }
-.color-item {
-  width: 100%;
-  height: 150px;
-  margin-bottom: 24px;
-}
-
-.color-item-1 {
-  background-color: #E58D35;
-}
-
-.color-item-2 {
-  background-color: #89C249;
-}
-
-.color-item-3 {
-  background-color: #282B38;
-  border: 1px solid #fff;
-}
-
-.color-item-4 {
-  background-color: #363A4D;
-}
-
+/*@import "sass/markap";*/
 ::selection {
   color: #fff;
   background-color: #89C249;
