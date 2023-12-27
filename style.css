@@ -1201,8 +1201,6 @@ body {
   border-radius: 10px 10px 0px 0px;
   padding: 18px 17px 17px 34px;
   background-color: transparent;
-}
-.faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button p {
   font-size: 18px;
   font-weight: 700;
   line-height: 124.5%;
@@ -1222,8 +1220,6 @@ body {
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
   background-color: white;
   box-shadow: none;
-}
-.faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) p {
   color: black;
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button::after {
@@ -1277,6 +1273,8 @@ body {
   gap: 14px;
   display: flex;
   padding: 0 12px;
+  margin-top: 12px;
+  border-radius: 90px;
 }
 .faq .faq-card .questions-card .input-parent .input-child {
   max-width: 310px;
@@ -1312,16 +1310,14 @@ body {
   padding-top: 15px;
   resize: none;
 }
-.faq .faq-card .questions-card .input-parent a {
-  margin-top: 12px;
-  border-radius: 90px;
-}
-.faq .faq-card .questions-card .input-parent a .btn {
+.faq .faq-card .questions-card .input-parent .btn {
   height: 68px;
   padding: 21px 0 20px 32px;
   width: 100%;
+  margin-top: 12px;
+  border-radius: 90px;
 }
-.faq .faq-card .questions-card .input-parent a .btn p {
+.faq .faq-card .questions-card .input-parent .btn h4 {
   margin: 0;
   padding: 0;
   max-width: 150px;
@@ -1330,7 +1326,7 @@ body {
   font-weight: 600;
   line-height: 146%;
 }
-.faq .faq-card .questions-card .input-parent a .btn img {
+.faq .faq-card .questions-card .input-parent .btn img {
   margin: 0 18px 0 auto;
 }
 .faq .show {
@@ -1340,6 +1336,9 @@ body {
   padding: 0;
 }
 
+.cooperation {
+  margin-bottom: 56px;
+}
 .cooperation .cooperation-container {
   position: relative;
   padding-bottom: 100px;
@@ -1416,8 +1415,82 @@ body {
 }
 
 footer {
-  height: 100px;
-  margin-top: auto;
+  margin-bottom: 49px;
+}
+footer .container .template-footer {
+  max-width: 1140px;
+  margin-left: 12px;
+  background-color: #E58D35;
+  height: 2px;
+  margin-bottom: 34px;
+}
+footer .container .col-lg-3 {
+  padding-top: 6px;
+}
+footer .container .img-logo {
+  display: block;
+  max-width: 172px;
+  height: 48px;
+  margin-bottom: 31px;
+}
+footer .container .footer-container_main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 19px;
+}
+footer .container .footer-container_main p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 162.5%;
+  padding-right: 15px;
+}
+footer .container .footer-container_main a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 162.5%;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+footer .container .nav-img {
+  display: flex;
+  gap: 8px;
+}
+footer .container .nav-img .nav-icon {
+  display: inline-block;
+  max-width: 34px;
+  height: 33px;
+}
+footer .container .description-container {
+  padding-left: 63px;
+}
+footer .container .description-container .col-4 {
+  padding-left: 23px;
+}
+footer .container .description-container .col-4:nth-child(2) {
+  padding-left: 9px;
+}
+footer .container .description-container .footer-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 146%;
+  margin-bottom: 15px;
+}
+footer .container .description-container .row {
+  gap: 6px;
+}
+footer .container .description-container .row a {
+  cursor: pointer;
+  color: #85899C;
+  text-decoration-line: underline;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160.5%;
+  text-underline-offset: 2px;
+}
+footer .container .description-container .row a:hover {
+  transition: all 0.2s;
+  color: #89C249;
 }
 
 @media (min-width: 992px) {
@@ -1698,7 +1771,10 @@ footer {
     position: absolute;
     right: 0;
   }
-  .advantages .advantages-container .advantages-title {
+  .advantages {
+    margin-bottom: 55px;
+  }
+  .advantages .advantages-container .container .advantages-title {
     font-size: 24px;
     max-width: 310px;
     margin: 55px auto 17px auto;
@@ -1715,6 +1791,9 @@ footer {
     right: 0;
     border-radius: 0;
   }
+  .delivery {
+    margin-bottom: 59px;
+  }
   .delivery .container-carousel .slick-list,
   .services .container-carousel .slick-list {
     max-width: 360px;
@@ -1723,10 +1802,26 @@ footer {
   .delivery .template-title,
   .services .template-title {
     font-size: 24px;
+    max-width: 335px;
+    margin: 0 auto 32px;
+    padding-bottom: 25px;
   }
   .delivery .services-title,
   .services .services-title {
     font-size: 24px;
+  }
+  .services {
+    margin-bottom: 54px;
+  }
+  .services .template-title-type2 {
+    margin-bottom: 61px;
+  }
+  .services .services-container {
+    padding-bottom: 60px;
+  }
+  .services .services-container .services-title {
+    padding-top: 53px;
+    margin-bottom: 23px;
   }
   .services .services-container::before {
     content: "";
@@ -1741,11 +1836,13 @@ footer {
   }
   .about-company {
     margin-bottom: 60px;
+    padding-top: 0;
   }
   .about-company .container .col-lg-6 .about-company-title {
     text-align: center;
-    margin: 0 auto 29px;
+    margin: 0 auto 26px;
     font-size: 24px;
+    padding-bottom: 24px;
   }
   .about-company .container .col-lg-6 .about-company-title::after {
     left: 50%;
@@ -1800,10 +1897,7 @@ footer {
   .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button {
     padding: 16px 20px 15px 22px;
     height: 100%;
-  }
-  .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button p {
     font-size: 16px;
-    max-width: 235px;
   }
   .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) p {
     padding-top: 10px;
@@ -1831,8 +1925,11 @@ footer {
     left: 10px;
     right: 10px;
   }
+  .cooperation {
+    margin-bottom: 54px;
+  }
   .cooperation .cooperation-container {
-    padding-bottom: 60px;
+    padding-bottom: 56px;
     padding-top: 54px;
   }
   .cooperation .cooperation-container .container {
@@ -1846,6 +1943,7 @@ footer {
   }
   .cooperation .cooperation-container .title-default {
     margin-bottom: 43px;
+    max-width: 335px;
   }
   .cooperation .cooperation-container .title-default h3 {
     font-size: 24px;
@@ -1893,6 +1991,24 @@ footer {
     max-width: 545px;
     height: 220px;
     margin-bottom: 36px;
+  }
+  footer .container .template-footer {
+    max-width: 335px;
+    margin: 0 auto 34px;
+  }
+  footer .container .img-logo {
+    margin: 0 auto 31px;
+  }
+  footer .container .footer-container_main {
+    text-align: center;
+    max-width: 263px;
+    margin: 0 auto 19px;
+  }
+  footer .container .nav-img {
+    justify-content: center;
+  }
+  footer .container .description-container {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
