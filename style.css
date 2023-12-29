@@ -405,9 +405,6 @@ section.container-fluid:before {
   background-color: #363A4D;
   z-index: -1;
 }
-section:nth-child(odd) .template-title:after {
-  background-color: #E58D35;
-}
 
 .template-title {
   text-align: center;
@@ -678,6 +675,7 @@ header .navbar .container .navbar-collapse .navbar-nav {
   text-align: center;
   max-width: 640px;
   width: 100%;
+  gap: 8px;
 }
 header .navbar .container .navbar-collapse .navbar-nav .nav-item {
   margin: auto;
@@ -689,7 +687,7 @@ header .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-family: ProximaNova;
   font-weight: 400;
   font-size: 16px;
-  line-height: 23.36px;
+  line-height: 146%;
   padding: 0;
 }
 header .navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
@@ -717,31 +715,31 @@ body {
   margin-top: 163px;
   max-width: 463px;
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 135.5%;
+  line-height: 126%;
   margin-bottom: 0;
-  line-height: 1.3;
-  /* 27.1px */
 }
 .first-screen .container-xxl .container .subtitle {
+  max-width: 345px;
   margin-bottom: 42px;
   font-size: 20px;
-  font-style: normal;
   font-weight: 300;
   height: 54px;
-  max-width: 345px;
-  line-height: 1.5;
+  margin-top: 9px;
+  margin-bottom: 37px;
+  line-height: 135.5%;
 }
 .first-screen .container-xxl .container .subtitle-1 {
   max-width: 446px;
 }
 .first-screen .container-xxl .container .btn {
   margin-bottom: 228px;
+  letter-spacing: normal;
+  padding-left: 32px;
 }
 .first-screen .container-xxl .container .btn .icon {
-  margin: 0 -14px 0 34px;
+  margin: 0 -14px 0 48px;
 }
 .first-screen .container-xxl .first-screen-nav {
   justify-content: space-between;
@@ -773,6 +771,7 @@ body {
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .calculation {
@@ -843,11 +842,11 @@ body {
 }
 .calculation .container .container-left_form .btn {
   margin-top: 25px;
-  height: 68px;
+  height: 70px;
   padding: 0;
   padding-left: 32px;
   width: 100%;
-  letter-spacing: 0;
+  letter-spacing: normal;
 }
 .calculation .container .container-left_form .btn .icon {
   margin: 0 -14px 0 50px;
@@ -863,7 +862,7 @@ body {
   display: none;
 }
 .calculation .container .download-file {
-  padding: 11px 86px 10px;
+  padding: 9px 86px 8px;
   max-width: 526px;
   width: 100%;
   border: 2px dashed rgba(255, 255, 255, 0.26);
@@ -887,6 +886,9 @@ body {
   font-weight: 400;
 }
 
+.advantages {
+  margin-bottom: 98px;
+}
 .advantages .advantages-container {
   position: relative;
 }
@@ -907,7 +909,7 @@ body {
 }
 .advantages .advantages-container .container .advantages-title {
   margin-top: 90px;
-  margin-bottom: 17px;
+  margin-bottom: 21px;
 }
 .advantages .advantages-container .container .advantages-parent {
   display: flex;
@@ -1033,7 +1035,7 @@ body {
 }
 
 .services {
-  margin-bottom: 98px;
+  margin-bottom: 97px;
 }
 .services .template-title-type2 {
   margin-bottom: 77px;
@@ -1109,7 +1111,7 @@ body {
 }
 
 .about-company {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   padding-top: 56px;
 }
 .about-company .container .col-lg-6 .about-company-title {
@@ -1134,8 +1136,9 @@ body {
 .about-company .container .about-company_img-container {
   background-color: #363A4D;
   border-radius: 50%;
-  transform: translate(0px, -57px);
-  padding: 0 44px;
+  transform: translate(9px, -56px);
+  padding: 0 36px;
+  max-width: 550px;
   max-height: 550px;
 }
 .about-company .container .about-company_img-container img {
@@ -1144,7 +1147,7 @@ body {
 }
 
 .faq {
-  margin-bottom: 97px;
+  margin-bottom: 99px;
 }
 .faq .faq-title {
   margin-bottom: 69px;
@@ -1161,7 +1164,7 @@ body {
   font-size: 17px;
   font-weight: 300;
   line-height: 144.5%;
-  padding: 0px 95px 21px 34px;
+  padding: 0px 95px 23px 34px;
 }
 .faq .faq_accordion-container .accordion-flush {
   display: flex;
@@ -1199,6 +1202,7 @@ body {
   background-color: white;
   box-shadow: none;
   color: black;
+  padding: 18px 17px 11px 34px;
 }
 .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button::after {
   background-image: url(assets/img/acordition.svg);
@@ -1472,7 +1476,8 @@ footer .container .description-container .row a:hover {
 
 @media (min-width: 992px) {
   header .navbar .container .d-flex .btn {
-    padding: 12px 22px;
+    padding: 13px 26px;
+    letter-spacing: normal;
   }
   .first-screen-slider .slick-slide {
     padding: 0 92px;
@@ -1597,23 +1602,25 @@ footer .container .description-container .row a:hover {
   header .navbar button.hamburger.hamburger--squeeze.js-hamburger span.hamburger-inner {
     top: 21px;
   }
-  header .navbar .navbar-collapse {
+  header .navbar .container .navbar-collapse {
     background-color: #363A4D;
     max-height: 508px;
     box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+    max-width: 100%;
   }
-  header .navbar .navbar-collapse .navbar-nav {
+  header .navbar .container .navbar-collapse .navbar-nav {
     height: 309px;
     margin: auto;
     margin-top: 52px;
     margin-bottom: 34px;
     justify-content: space-between;
+    gap: 0;
   }
-  header .navbar .navbar-collapse .d-flex {
+  header .navbar .container .navbar-collapse .d-flex {
     margin-bottom: 60px;
     justify-content: center;
   }
-  header .navbar .navbar-collapse .d-flex .btn {
+  header .navbar .container .navbar-collapse .d-flex .btn {
     padding: 22px 80px 21px;
     font-size: 16px;
   }
@@ -1839,6 +1846,7 @@ footer .container .description-container .row a:hover {
   }
   .about-company .container .col-lg-6 .about-company_img-container {
     transform: translate(5px, 0);
+    padding: 0 44px;
     max-width: 277px;
     height: 277px;
     margin: 0 auto;
