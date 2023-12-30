@@ -1642,14 +1642,13 @@ footer .container .description-container .row a:hover {
     padding: 0;
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 72px);
+    max-height: 649px;
     border-radius: 0;
     display: flex;
   }
   .first-screen .container-xxl .test .slider-box .slider .container {
     text-align: center;
     align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1657,21 +1656,28 @@ footer .container .description-container .row a:hover {
   }
   .first-screen .container-xxl .test .slider-box .slider .container .title-slider {
     max-width: 290px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     width: 100%;
     height: 80px;
     font-size: 32px;
     line-height: 126%;
+    margin-top: 188px;
     /* 40.32px */
   }
   .first-screen .container-xxl .test .slider-box .slider .container .subtitle {
-    max-width: 335px;
+    max-width: 260px;
     width: 100%;
-    height: 44px;
     font-size: 16px;
     line-height: 135.5%;
-    /* 21.68px */
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    height: auto;
+  }
+  .first-screen .container-xxl .test .slider-box .slider .container .btn {
+    margin-bottom: 0;
+  }
+  .first-screen .container-xxl .test .slider-box .slider .container .btn .icon {
+    margin: 0 -14px 0 54px;
   }
   .first-screen .container-xxl .test .slider-box .slick-slide:before {
     content: "";
@@ -1684,6 +1690,7 @@ footer .container .description-container .row a:hover {
     background: rgba(0, 0, 0, 0.05);
   }
   .first-screen .container-xxl .test .slider-box .slick-dots {
+    bottom: 47px;
     left: 50%;
     transform: translate(-50%, 50%);
   }
@@ -1691,10 +1698,10 @@ footer .container .description-container .row a:hover {
     margin-bottom: 60px;
   }
   .calculation .container .box-left_form {
-    padding: 0 24px;
+    padding: 0 17px;
   }
   .calculation .container .container-left_form {
-    padding: 45px 30px 32px 31px;
+    padding: 48px 30px 32px 31px;
   }
   .calculation .container .title-calculation {
     text-align: center;
@@ -1758,17 +1765,23 @@ footer .container .description-container .row a:hover {
   .advantages {
     margin-bottom: 55px;
   }
+  .advantages .advantages-container .container .template-title-type2 {
+    margin-bottom: 48px;
+  }
   .advantages .advantages-container .container .advantages-title {
     font-size: 24px;
     max-width: 310px;
-    margin: 55px auto 17px auto;
+    margin: 55px auto 23px auto;
+  }
+  .advantages .advantages-container .container .icon-img {
+    padding: 9px 10px;
   }
   .advantages .advantages-container .slider-box_advantages {
     padding-bottom: 60px;
   }
   .advantages .advantages-container .slider-box_advantages .advantages-subtitle {
     max-width: 270px;
-    margin: 0 auto 48px;
+    margin: 0 auto 46px;
   }
   .advantages .advantages-container::before {
     left: 0;
@@ -1777,6 +1790,17 @@ footer .container .description-container .row a:hover {
   }
   .delivery {
     margin-bottom: 59px;
+  }
+  .delivery .container-xxl .card {
+    padding: 0 15px;
+  }
+  .delivery .container-xxl,
+  .services .container-xxl {
+    padding: 0;
+  }
+  .delivery .container-xxl .container,
+  .services .container-xxl .container {
+    padding: 0;
   }
   .delivery .container-carousel .slick-list,
   .services .container-carousel .slick-list {
@@ -1807,6 +1831,20 @@ footer .container .description-container .row a:hover {
     padding-top: 53px;
     margin-bottom: 23px;
   }
+  .services .services-container .template-slider .card .card-content {
+    padding: 0 23px 33px 27px;
+  }
+  .services .services-container .template-slider .card .card-content .card-title-default {
+    margin-bottom: 11px;
+  }
+  .services .services-container .template-slider .card .card-content .card-description p {
+    font-size: 14px;
+    max-width: 270px;
+    margin-bottom: 6px;
+  }
+  .services .services-container .template-slider .card .card-img {
+    background-position-x: center;
+  }
   .services .services-container::before {
     content: "";
     position: absolute;
@@ -1821,6 +1859,9 @@ footer .container .description-container .row a:hover {
   .about-company {
     margin-bottom: 60px;
     padding-top: 0;
+  }
+  .about-company .container .col-lg-6 {
+    padding: 0 5px;
   }
   .about-company .container .col-lg-6 .about-company-title {
     text-align: center;
@@ -1837,7 +1878,6 @@ footer .container .description-container .row a:hover {
     letter-spacing: normal;
     font-size: 16px;
     font-weight: 300;
-    padding: 0 12px;
     text-align: justify;
     line-height: 149.5%;
   }
@@ -1862,13 +1902,13 @@ footer .container .description-container .row a:hover {
   .faq .faq-title {
     margin-bottom: 54px;
   }
-  .faq .faq-title h3 {
+  .faq .faq-title .title-default {
     font-size: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
   .faq .faq_accordion-container {
     margin: 0 auto 28px;
-    padding: 0 23px;
+    padding: 0 5px;
   }
   .faq .faq_accordion-container .accordion-flush {
     gap: 14px;
@@ -1884,6 +1924,9 @@ footer .container .description-container .row a:hover {
     height: 100%;
     font-size: 16px;
   }
+  .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
+    padding: 18px 17px 11px 21px;
+  }
   .faq .faq_accordion-container .accordion-flush .accordion-item .accordion-button:not(.collapsed) p {
     padding-top: 10px;
   }
@@ -1891,10 +1934,13 @@ footer .container .description-container .row a:hover {
     font-size: 14px;
     padding: 0px 15px 9px 20px;
   }
+  .faq .col-lg {
+    padding: 0;
+  }
   .faq .faq-card {
     height: 553px;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .faq .faq-card .questions-card .title-card {
     text-align: center;
@@ -1907,19 +1953,23 @@ footer .container .description-container .row a:hover {
     max-width: 100%;
   }
   .faq .faq-card::before {
-    left: 10px;
-    right: 10px;
+    left: 5px;
+    right: 5px;
   }
   .cooperation {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
   .cooperation .cooperation-container {
-    padding-bottom: 56px;
+    padding-bottom: 60px;
     padding-top: 54px;
   }
   .cooperation .cooperation-container .container {
-    padding-right: 15px;
-    padding-left: 27px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .cooperation .cooperation-container .col-lg-6 {
+    padding-left: 21px;
+    padding-right: 8px;
   }
   .cooperation .cooperation-container::before {
     left: -15px;
@@ -1959,10 +2009,9 @@ footer .container .description-container .row a:hover {
     margin-bottom: 42px;
   }
   .cooperation .cooperation-container .cooperation-btn_container {
-    margin-top: 27px;
-    max-width: 332px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 335px;
+    margin: 27px auto 0;
+    transform: translate(-6px, 0px);
   }
   .cooperation .cooperation-container .cooperation-btn_container .btn {
     padding-right: 0;
@@ -1972,7 +2021,12 @@ footer .container .description-container .row a:hover {
   .cooperation .cooperation-container .cooperation-btn_container .btn img {
     margin: 0 20px 0 0px;
   }
-  .cooperation .cooperation-container .container-img {
+  .cooperation .cooperation-container .row .container-img {
+    margin-bottom: 30px;
+    max-width: 545px;
+    height: 220px;
+  }
+  .cooperation .cooperation-container .flex-row-reverse .container-img {
     max-width: 545px;
     height: 220px;
     margin-bottom: 36px;
@@ -1988,6 +2042,9 @@ footer .container .description-container .row a:hover {
     text-align: center;
     max-width: 263px;
     margin: 0 auto 19px;
+  }
+  footer .container .footer-container_main p {
+    padding-right: 0;
   }
   footer .container .nav-img {
     justify-content: center;
